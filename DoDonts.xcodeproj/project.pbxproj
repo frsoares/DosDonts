@@ -23,8 +23,8 @@
 		DBEB91A72091FBA400256F9E /* HospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91A62091FBA400256F9E /* HospitalViewController.swift */; };
 		DBEB91A92091FBEC00256F9E /* HospitalViewController+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91A82091FBEC00256F9E /* HospitalViewController+Data.swift */; };
 		DBEB91AB2091FC9400256F9E /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91AA2091FC9400256F9E /* Hospital.swift */; };
-		DBEB91AD2091FE9900256F9E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91AC2091FE9900256F9E /* Data.swift */; };
-		DBEB91AF209200A600256F9E /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91AE209200A600256F9E /* MyData.swift */; };
+		DBEB91AD2091FE9900256F9E /* HospitalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91AC2091FE9900256F9E /* HospitalRepository.swift */; };
+		DBEB91AF209200A600256F9E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91AE209200A600256F9E /* Repository.swift */; };
 		DBEB91B32092026700256F9E /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91B22092026700256F9E /* Doctor.swift */; };
 		DBEB91B7209208C600256F9E /* ViewController+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91B6209208C600256F9E /* ViewController+Data.swift */; };
 		DBEB91BA20920AC300256F9E /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91B820920AC300256F9E /* DoctorTableViewCell.swift */; };
@@ -50,8 +50,8 @@
 		DBEB91A62091FBA400256F9E /* HospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewController.swift; sourceTree = "<group>"; };
 		DBEB91A82091FBEC00256F9E /* HospitalViewController+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HospitalViewController+Data.swift"; sourceTree = "<group>"; };
 		DBEB91AA2091FC9400256F9E /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
-		DBEB91AC2091FE9900256F9E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		DBEB91AE209200A600256F9E /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		DBEB91AC2091FE9900256F9E /* HospitalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalRepository.swift; sourceTree = "<group>"; };
+		DBEB91AE209200A600256F9E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		DBEB91B22092026700256F9E /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		DBEB91B6209208C600256F9E /* ViewController+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Data.swift"; sourceTree = "<group>"; };
 		DBEB91B820920AC300256F9E /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 				DBEB91A62091FBA400256F9E /* HospitalViewController.swift */,
 				DBEB91A82091FBEC00256F9E /* HospitalViewController+Data.swift */,
 				DBEB91AA2091FC9400256F9E /* Hospital.swift */,
-				DBEB91AC2091FE9900256F9E /* Data.swift */,
+				DBEB91AC2091FE9900256F9E /* HospitalRepository.swift */,
 			);
 			path = "Organizar os dados";
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 		DBEB91B12092016600256F9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DBEB91AE209200A600256F9E /* MyData.swift */,
+				DBEB91AE209200A600256F9E /* Repository.swift */,
 				DBEB91B22092026700256F9E /* Doctor.swift */,
 			);
 			path = Model;
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBEB91902091F08C00256F9E /* MeuViewController.swift in Sources */,
-				DBEB91AF209200A600256F9E /* MyData.swift in Sources */,
+				DBEB91AF209200A600256F9E /* Repository.swift in Sources */,
 				DBEB91B32092026700256F9E /* Doctor.swift in Sources */,
 				DBEB91AB2091FC9400256F9E /* Hospital.swift in Sources */,
 				DBEB917B2091E8B100256F9E /* ViewController.swift in Sources */,
@@ -310,7 +310,7 @@
 				DBEB91A12091F62D00256F9E /* ColorsViewController+Delegate.swift in Sources */,
 				DBEB918E2091E90700256F9E /* meuViewController.swift in Sources */,
 				DBEB91A72091FBA400256F9E /* HospitalViewController.swift in Sources */,
-				DBEB91AD2091FE9900256F9E /* Data.swift in Sources */,
+				DBEB91AD2091FE9900256F9E /* HospitalRepository.swift in Sources */,
 				DBEB91792091E8B100256F9E /* AppDelegate.swift in Sources */,
 				DBEB919A2091F44900256F9E /* JobsViewController.swift in Sources */,
 				DBEB91A92091FBEC00256F9E /* HospitalViewController+Data.swift in Sources */,

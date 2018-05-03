@@ -15,13 +15,13 @@ extension ViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MyData.shared.doctors.count
+        return Repository.shared.doctors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "doctorCell") as! DoctorTableViewCell
-        let doctor = MyData.shared.doctors[indexPath.row]
+        let doctor = Repository.shared.doctors[indexPath.row]
         cell.nameLabel.text = doctor.name
         cell.schoolLabel.text = doctor.school
         return cell
